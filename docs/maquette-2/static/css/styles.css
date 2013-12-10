@@ -1,0 +1,157 @@
+body {
+	
+	margin: 1px 20px auto;
+	padding: 0 20px;
+	height: 942px;
+	overflow: hidden;
+	background-color: grey;
+}
+
+h2 {
+	font-size: 42px;
+	font-family: verdana;
+	margin: 10px 0;
+}
+
+.column {
+	float: left;
+}
+
+.webtv {
+	background-color: white;
+	width: 1600px;
+	height: 942px;
+	
+}
+
+
+.left,  .right {
+	width: 250px;
+	height: 942px;
+	-webkit-column-width: 280px;
+	background-color:  #dbdbdb;
+}
+
+.middle {
+	width: 1100px;
+	height: 942px;
+	margin: 0 5px;
+}
+
+.caption {
+	width:  240px;
+	height:  145px;
+	padding: 5px;
+
+	opacity: 0.7;
+}
+.caption img, .box img {
+	margin: 10px 5px;
+	width:  230px;
+	height:  140px;
+}
+
+.info {
+	height:  145px;
+	margin: 5px 20px;
+	text-align: center;
+	position: relative;
+	-webkit-border-top-left-radius: 1010px;
+border-top-left-radius: 1010px;
+}
+
+.eventContainer {
+	height:  99px;
+	position: relative;
+	background-color: #dbdbdb;
+	padding: 10px 0;
+}
+
+.selected {
+	opacity: 1;
+	margin: 2px;
+	padding: 0;
+	border: 3px solid #707070;
+}
+
+.breakingNews {
+	position: absolute;
+
+}
+
+.animatedload {
+	top: 30px;
+	left: 10px;
+}
+
+.tools {
+	position: absolute;
+	right: 30px;
+	top: 80px;
+}
+
+.pause {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+button.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #000000;
+	padding: 8px 16px;
+	background: -moz-linear-gradient(
+		top,
+		#787878 0%,
+		#e6e6e6 50%,
+		#dbdbdb);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#787878),
+		color-stop(0.50, #e6e6e6),
+		to(#dbdbdb));
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #707070;
+	-moz-box-shadow:
+		0px 0px 5px rgba(000,000,000,0),
+		inset 0px 0px 9px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 0px 5px rgba(000,000,000,0),
+		inset 0px 0px 9px rgba(255,255,255,1);
+	box-shadow:
+		0px 0px 5px rgba(000,000,000,0),
+		inset 0px 0px 9px rgba(255,255,255,1);
+	text-shadow:
+		0px 0px 5px rgba(000,000,000,0),
+		0px 0px 5px rgba(255,255,255,1);
+}
+
+
+/* This code is tested with latest version of Firefox and Chrome */
+.box {
+  position: relative;
+  width: 240px;
+  height: 165px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 2%     0%     0%     0% /     20%     0%     0%     0%;
+}
+.box:before {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	top: 0px;
+	left: 0px;
+	width: 29%;
+	height: 25%;
+	box-shadow: -10px -10px 15px rgba(0,0,0,0.5);
+	-webkit-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+	 -moz-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+	 -ms-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+	 -o-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+	 transform: rotate(7deg) translate(20px,25px) skew(20deg);
+}
