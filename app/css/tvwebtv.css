@@ -5,9 +5,6 @@ body {
 	background-color: grey;
 }
 
-div {
-	border: 1px dotted #fff;
-}
 
 iframe {
 	height: 100%;
@@ -21,7 +18,7 @@ iframe {
 
 .webtv {
 	height: 1080px;
-	width: 1930px;
+	width: 1920px;
 	background-color: #f0f0f0;
 }
 
