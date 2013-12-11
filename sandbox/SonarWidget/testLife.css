@@ -1,0 +1,31 @@
+.red {
+	color: red;
+}
+.green {
+	color: lime;
+}
+
+.widget {
+	width: 320px;
+	height: 180px;
+	background-color: rgb(197, 197, 197);
+	font-family: Verdana;
+	font-size: 25px;
+}
+.widget	.item {
+	padding-left : 5px;
+}
+
+.widget .item .diff {
+	padding-left: 5px;
+}
+
+	/*#blocker,
+	#critical,
+	#major,
+	#minor,
+	#info {
+
+	}*/
+	
+
