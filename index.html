@@ -25,12 +25,9 @@
 				<h3>Ceci est une première version, rien de d&eacute;finitif</h3>
 			</div>
 			<div class="iframeContainer">
-				<iframe id="webtv_iframe" src="http://10.194.63.32/sonar/"></iframe>
+				<iframe id="webtv_iframe" src="_blank.html"></iframe>
 			</div>
-			<div class="eventContainer">
-				<button type="button" name="" value="http://10.194.63.32/sonar/" class="css3button" onclick="loadIframe(this)">Sonar</button>
-				<button type="button" name="" value="http://ic-vod.rec.orange.fr/vod-mp6v2/" class="css3button" onclick="loadIframe(this)">IC VOD MP6V2</button>
-				<button type="button" name="" value="http://ic-live.rec.orange.fr/live-trunk/" class="css3button" onclick="loadIframe(this)">IC Live</button>
+			<div class="eventContainer" id="eventContainer">
 			</div>
 		</div>
 		<div class="column right">
@@ -47,5 +44,8 @@
 		</div>
 	</div>	
 	<script type="text/javascript" src="app/js/tvwebtv.js"></script>
+	<script>
+    	window.onload = init;
+	</script>
 </body>
 </html>
