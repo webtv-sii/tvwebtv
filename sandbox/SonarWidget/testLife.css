@@ -2,30 +2,47 @@
 	color: red;
 }
 .green {
-	color: lime;
+	color: rgb(0, 219, 0);
 }
 
 .widget {
 	width: 320px;
 	height: 180px;
-	background-color: rgb(197, 197, 197);
+	background-color: rgb(71, 71, 71);
 	font-family: Verdana;
-	font-size: 25px;
+	font-size: 30px;
+	color: white;
 }
 .widget	.item {
 	padding-left : 5px;
 }
 
+.widget .title,
+.widget .infos,
+.widget .numbers,
+.widget .diff {
+	display: inline-block;
+}
+
+.widget .infos {
+	float: right;
+	padding-right: 10px;
+}
+
+
 .widget .item .diff {
 	padding-left: 5px;
 }
 
-	/*#blocker,
-	#critical,
-	#major,
-	#minor,
-	#info {
+.widget span  {
+	float: right;
+}
 
-	}*/
-	
 
+@-webkit-keyframes blink {
+    0% { background-color: red; }
+    100% { background-color: rgb(197, 197, 197); }
+}
+.blink {
+    -webkit-animation: blink 1s linear infinite;
+} 

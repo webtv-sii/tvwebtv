@@ -3,6 +3,15 @@ function init() {
 	var cb = function(responseJSON) {
 		window.webtv = {conf: JSON.parse(responseJSON)};
 		initButtons(window.webtv.conf.buttons);
+
+        // SonarViewer initialization
+        var sn = new SonarViewer(window.webtv.conf.SonarViewer);
+        // first call
+        sn.refresh();
+        // every 5s refresh it !
+        setInterval(function (){
+            sn.refresh();
+        },5000);
 	};
 
 	var xhrSender = new Xhr();

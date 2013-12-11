@@ -9,6 +9,43 @@
 	<div class="webtv">
 		<div class="column left">
 			<div class="box">
+				<div class="widget" id="sonarviewer">
+					<div class="item">
+						<div class="title">blockers : </div>
+						<div class="infos">
+							<div id="blocker" class="numbers"></div>
+							<div id="blockerdiff" class="diff"></div>
+						</div>
+					</div>
+					<div class="item" id="criticalline">
+						<div class="title">criticals : </div>
+						<div class="infos">
+							<div id="critical" class="numbers"></div>
+							<div id="criticaldiff" class="diff"></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">major : </div>
+						<div class="infos">
+							<div id="major" class="numbers"></div>
+							<div id="majordiff" class="diff"></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">minor : </div>
+						<div class="infos">
+							<div id="minor" class="numbers"></div>
+							<div id="minordiff" class="diff"></div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title">info : </div>
+						<div class="infos">
+							<div id="info" class="numbers"></div>
+							<div id="infodiff" class="diff"></div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="box">
 			</div>
@@ -44,6 +81,7 @@
 		</div>
 	</div>	
 	<script type="text/javascript" src="app/js/tvwebtv.js"></script>
+	<script type="text/javascript" src="app/js/widgets/SonarViewer.js"></script>
 	<script>
     	window.onload = init;
 	</script>

@@ -1,11 +1,41 @@
 <link rel="stylesheet" href="testLife.css" type="text/css" />
 
-<div class="widget">
-	<div class="item">blockers : <span id="blocker"></span></div>
-	<div class="item">criticals : <span id="critical"></span><span id="criticaldiff" class="diff"></span></div>
-	<div class="item">major : <span id="major"></span></div>
-	<div class="item">minor : <span id="minor"></span></div>
-	<div class="item">info : <span id="info"></span></div>
+<div class="widget" id="sonarviewer">
+	<div class="item">
+		<div class="title">blockers : </div>
+		<div class="infos">
+			<div id="blocker" class="numbers"></div>
+			<div id="blockerdiff" class="diff"></div>
+		</div>
+	</div>
+	<div class="item" id="criticalline">
+		<div class="title">criticals : </div>
+		<div class="infos">
+			<div id="critical" class="numbers"></div>
+			<div id="criticaldiff" class="diff"></div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="title">major : </div>
+		<div class="infos">
+			<div id="major" class="numbers"></div>
+			<div id="majordiff" class="diff"></div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="title">minor : </div>
+		<div class="infos">
+			<div id="minor" class="numbers"></div>
+			<div id="minordiff" class="diff"></div>
+		</div>
+	</div>
+	<div class="item">
+		<div class="title">info : </div>
+		<div class="infos">
+			<div id="info" class="numbers"></div>
+			<div id="infodiff" class="diff"></div>
+		</div>
+	</div>
 </div>
 
 <script src="testLife.js"></script>

@@ -1,21 +1,28 @@
 {
 	"buttons" : [
-	{
-		"name": "sonar",
-		"displayName": "Sonar",
-		"url": "http://10.194.63.32/sonar/"
-	},{
-		"name": "qc",
-		"displayName": "HPQC",
-		"url": "http://qc-orangelabs.si.francetelecom.fr/qcbin/"
-	},{
-		"name": "jenkins",
-		"displayName": "Jenkins",
-		"url": "http://10.194.63.32/jenkins/view/Client/"
-	},{
-		"name": "icescrum",
-		"displayName": "Icescrum",
-		"url": "http://10.194.63.32:8080/icescrum/"
+		{
+			"name": "sonar",
+			"displayName": "Sonar",
+			"url": "http://10.194.63.32/sonar/"
+		},{
+			"name": "qc",
+			"displayName": "HPQC",
+			"url": "http://qc-orangelabs.si.francetelecom.fr/qcbin/"
+		},{
+			"name": "jenkins",
+			"displayName": "Jenkins",
+			"url": "http://10.194.63.32/jenkins/view/Client/"
+		},{
+			"name": "icescrum",
+			"displayName": "Icescrum",
+			"url": "http://10.194.63.32:8080/icescrum/"
+		}
+	],
+	"SonarViewer" : {
+		"levels" :  ["blocker", "critical", "major", "minor", "info"],
+		"nbViolationsUrl" : "http://10.194.63.32/sonar/api/violations?resource=com.orange.wptv:client:js&depth=-1&priorities={$level}&format=json",
+		"diffViolationsUrl" : "http://10.194.63.32/sonar/api/timemachine?resource=com.orange.wptv:client:js&metrics={$level}_violations&fromDateTime={$date}",
+		"defaultDiffCssClass" : "diff",
+		"defaultNbViolationCssClass" : "numbers"
 	}
-	]
 }
