@@ -127,7 +127,7 @@ button.css3button {
 
 @-webkit-keyframes blink {
     0% { background-color: red; }
-    100% { background-color: rgb(197, 197, 197); }
+    100% { background-color: rgb(71, 71, 71); }
 }
 .blink {
     -webkit-animation: blink 1s linear infinite;

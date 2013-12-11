@@ -11,7 +11,7 @@ SonarViewer.prototype.nbViolationsCallback = function(responseText,level) {
     document.getElementById(level).innerHTML = obj.length;
 
     if (level == "critical" && obj.length>98) {
-        document.getElementById("critical").className = this.defaultNbViolationCssClass + " blink";
+        document.getElementById("criticalline").className = this.defaultNbViolationCssClass + " blink";
     }
 };
 
